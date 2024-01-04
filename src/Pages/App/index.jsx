@@ -7,6 +7,8 @@ import NotFound from '../NotFound'
 import SignIn from '../SignIn'
 import './App.css'
 
+import Navbar  from '../../components/Navbar'
+
 const AppRoutes = ()=>{
   let routes = useRoutes([
     {path: '/', element: <Home/>},
@@ -24,6 +26,7 @@ const App = () => {
   return (
      <BrowserRouter>
       <AppRoutes/>
+      <Navbar/>
      </BrowserRouter>
   )
 }
